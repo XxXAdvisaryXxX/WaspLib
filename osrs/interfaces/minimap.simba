@@ -504,7 +504,7 @@ end;
 
 function TRSMinimap.HasSpecialWeapon(): Boolean;
 begin
-  Result := Target.HasColor(ColorTolerance($A68F56, 5.999, EColorSpace.RGB, [0.270, 1.494, 1.237]), 1, Self.Orbs[ERSMinimapOrb.SPECIAL].Bounds);
+  Result := Target.HasColor(ColorTolerance($A68F56, 5.999, EColorSpace.RGB, [0.270, 1.494, 1.237]), 1, Self.Orbs[ERSMinimapOrb.SPECIAL].Circle.Bounds);
 end;
 
 (*
